@@ -731,3 +731,32 @@ function finalizeCheckoutOrder() {
   updateCartUI();
   closeAllDrawers();
 }
+
+// Footer toggles (language pill + theme pill) — minimal state, persisted in localStorage
+document.addEventListener('DOMContentLoaded', () => {
+  const savedLang = localStorage.getItem('stravages-lang') || 'pt';
+  document.querySelectorAll('.lang-btn').forEach((btn) => {
+    btn.classList.toggle('is-active', btn.dataset.lang === savedLang);
+    btn.addEventListener('click', () => {
+      const lang = btn.dataset.lang;
+      localStorage.setItem('stravages-lang', lang);
+      document.querySelectorAll('.lang-btn').forEach((b) =>
+        b.classList.toggle('is-active', b.dataset.lang === lang)
+      );
+      document.documentElement.setAttribute('lang', lang);
+    });
+  });
+
+  const savedTheme = localStorage.getItem('stravages-theme') || 'dark';
+  document.documentElement.classList.toggle('light', savedTheme === 'light');
+  document.querySelectorAll('.theme-toggle').forEach((btn) => {
+    btn.classList.toggle('is-light', savedTheme === 'light');
+    btn.addEventListener('click', () => {
+      const isLight = document.documentElement.classList.toggle('light');
+      localStorage.setItem('stravages-theme', isLight ? 'light' : 'dark');
+      document.querySelectorAll('.theme-toggle').forEach((b) =>
+        b.classList.toggle('is-light', isLight)
+      );
+    });
+  });
+});
