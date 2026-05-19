@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STRAVAGES | Luxury Streetwear</title>
+  <meta name="description" content="Stravages - Mais que roupa. Uma presença. Coleção Signature Bee e peças exclusivas de alta qualidade.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    Envio grátis em compras acima de 80€
+  </div>
+
+  <!-- Header -->
+  <header id="main-header">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <img src="brand/bee.png" alt="Stravages Logo" style="height: 32px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
+        <span>STRAVAGES</span>
+      </a>
+
+      <!-- Menu Navigation -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="tracksuits.html">Tracksuits</a></li>
+          <li><a href="colecao-bee.html">Coleção Bee</a></li>
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Icons -->
+      <div class="nav-icons">
+        <button class="nav-icon-btn" id="search-btn" title="Pesquisar">
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <button class="nav-icon-btn" id="profile-btn" title="Perfil">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+        <button class="nav-icon-btn" id="cart-btn" title="Carrinho">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count-badge" id="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <img class="hero-bg" src="products/balaclava-1.jpg" alt="Stravages Balaclava Premium">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1 class="hero-title">STRAVAGES</h1>
+        <p class="hero-subtitle">Mais que roupa. Uma presença.</p>
+        <a href="#shop" class="btn-gold-outline">Shop Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured / Signature Section -->
+  <section class="signature-section" id="signature">
+    <div class="signature-grid">
+      <img class="signature-img" src="products/signature-beanie.jpg" alt="Stravages Signature Beanie — abelha e lettering bordados em dourado">
+      <div class="signature-content">
+        <span class="section-label">Assinatura</span>
+        <h2 class="section-title">Signature Bee<br>Collection</h2>
+        <p class="signature-desc">Identidade marcada. Sem compromissos. Linhas premium desenhadas para elevar a tua presença.</p>
+        <a href="#shop" class="btn-gold-outline">Ver Produtos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beanies Grid Section -->
+  <section class="products-section" id="shop">
+    <div class="container">
+      <div class="products-header">
+        <span class="section-label">Coleção Essencial</span>
+        <h2 class="section-title">Beanies</h2>
+      </div>
+      <div class="products-grid">
+        <a class="product-card" href="#" data-id="beanie-black" data-name="Stravages Beanie Black" data-price="29.90">
+          <img src="products/beanie-black.jpg" alt="Stravages Beanie Black — bordado dourado">
+          <h3 class="product-name">Stravages Beanie Black</h3>
+          <span class="product-price">29,90€</span>
+        </a>
+
+        <a class="product-card" href="#" data-id="beanie-white" data-name="Stravages Beanie White" data-price="29.90">
+          <img src="products/beanie-white.jpg" alt="Stravages Beanie White — bordado dourado">
+          <h3 class="product-name">Stravages Beanie White</h3>
+          <span class="product-price">29,90€</span>
+        </a>
+
+        <a class="product-card" href="#" data-id="beanie-pink" data-name="Stravages Beanie Pink" data-price="29.90">
+          <img src="products/beanie-pink.jpg" alt="Stravages Beanie Pink — bordado branco">
+          <h3 class="product-name">Stravages Beanie Pink</h3>
+          <span class="product-price">29,90€</span>
+        </a>
+
+        <a class="product-card" href="#" data-id="beanie-yellow" data-name="Stravages Beanie Yellow" data-price="29.90">
+          <img src="products/beanie-yellow.jpg" alt="Stravages Beanie Yellow — bordado preto">
+          <h3 class="product-name">Stravages Beanie Yellow</h3>
+          <span class="product-price">29,90€</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tracksuit Set Section -->
+  <section class="set-section" id="set">
+    <div class="set-grid">
+      <div class="set-content">
+        <span class="section-label">Conjuntos Exclusivos</span>
+        <h2 class="section-title">Stravages Set</h2>
+        <p class="signature-desc">Construído para presença. Não para passar despercebido. Hoodie relaxado e calças premium em tecido pesado com detalhes de costura e bordados em ouro.</p>
+        <button class="btn-gold-outline" onclick="addSetToCart()">Shop Set</button>
+      </div>
+      <img class="set-img" src="products/stravages-set.jpg" alt="Stravages Set — hoodie e calças pretos com detalhes dourados e abelha bordada">
+    </div>
+  </section>
+
+  <!-- Key Features Grid -->
+  <section class="features-section" id="features">
+    <div class="container features-grid">
+      <!-- Item 1 -->
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Crown Icon -->
+          <svg viewBox="0 0 24 24">
+            <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z" stroke="currentColor" fill="none" />
+            <path d="M3 20h18" stroke="currentColor" fill="none" />
+          </svg>
+        </div>
+        <h3 class="feature-title">Exclusividade</h3>
+        <p class="feature-desc">Peças limitadas e numeradas. Desenhadas para poucos.</p>
+      </div>
+      <!-- Item 2 -->
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Fabric Icon -->
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" fill="none" />
+            <path d="M2 17l10 5 10-5" stroke="currentColor" fill="none" />
+            <path d="M2 12l10 5 10-5" stroke="currentColor" fill="none" />
+          </svg>
+        </div>
+        <h3 class="feature-title">Qualidade Premium</h3>
+        <p class="feature-desc">Algodão de alta gramagem e fios selecionados para máximo conforto.</p>
+      </div>
+      <!-- Item 3 -->
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Thermometer Icon -->
+          <svg viewBox="0 0 24 24">
+            <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" stroke="currentColor" fill="none" />
+            <circle cx="11.5" cy="18.5" r="1.5" fill="currentColor" />
+          </svg>
+        </div>
+        <h3 class="feature-title">Conforto Térmico</h3>
+        <p class="feature-desc">Proteção perfeita e isolamento para qualquer estação do ano.</p>
+      </div>
+      <!-- Item 4 -->
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Attitude Icon -->
+          <svg viewBox="0 0 24 24">
+            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" fill="none" />
+            <path d="M13 6l-5 7h4v5l5-7h-4V6z" fill="currentColor" />
+          </svg>
+        </div>
+        <h3 class="feature-title">Atitude</h3>
+        <p class="feature-desc">Mais que um acessório estético. Uma afirmação de estilo de vida.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packaging Detail Section -->
+  <section class="packaging-section">
+    <div class="packaging-grid">
+      <div class="packaging-content">
+        <span class="section-label">Unboxing</span>
+        <h2 class="section-title">Cada detalhe<br>importa.</h2>
+        <p class="signature-desc">Do toque do material à abertura da embalagem. As nossas caixas exclusivas com acabamento mate e relevo dourado elevam o produto à categoria de obra de arte.</p>
+      </div>
+      <img class="packaging-img" src="products/packaging.jpg" alt="Caixa Stravages premium preta com logo e abelha em relevo dourado, sobre veludo preto">
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="container newsletter-container">
+      <h2 class="newsletter-title">Faz parte da colmeia</h2>
+      <p class="newsletter-desc">Recebe novidades, drops exclusivos e acesso antecipado.</p>
+      
+      <form class="newsletter-form" id="news-form" onsubmit="handleSubscribe(event)">
+        <div class="newsletter-input-wrapper">
+          <input type="email" id="subscriber-email" placeholder="O TEU EMAIL" required>
+        </div>
+        <button type="submit" class="btn-submit-gold">Subscrever</button>
+      </form>
+      <div class="newsletter-success" id="news-success">
+        Inscrição concluída. Bem-vindo à colmeia.
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <!-- Brand Col -->
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">
+          <img src="brand/bee.png" alt="Stravages Logo" style="height: 24px; width: auto; object-fit: contain;">
+          <span>STRAVAGES</span>
+        </a>
+      </div>
+      <!-- Shop Col -->
+      <div>
+        <h4 class="footer-col-title">Shop</h4>
+        <ul class="footer-links">
+          <li><a href="shop.html?category=beanies">Beanies</a></li>
+          <li><a href="tracksuits.html">Tracksuits</a></li>
+          <li><a href="shop.html?category=accessories">Acessórios</a></li>
+          <li><a href="shop.html">Todos os produtos</a></li>
+        </ul>
+      </div>
+      <!-- Info Col -->
+      <div>
+        <h4 class="footer-col-title">Informações</h4>
+        <ul class="footer-links">
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="envios-entregas.html">Envios e Entregas</a></li>
+          <li><a href="trocas-devolucoes.html">Trocas e Devoluções</a></li>
+          <li><a href="perguntas-frequentes.html">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+      <!-- Help / Follow Col -->
+      <div>
+        <h4 class="footer-col-title">Ajuda</h4>
+        <ul class="footer-links">
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+          <li><a href="termos-condicoes.html">Termos & Condições</a></li>
+          <li>
+            <a href="https://instagram.com" target="_blank" class="footer-social-link">
+              <!-- Instagram SVG Icon -->
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" fill="none" stroke-width="1.5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" fill="none" stroke-width="1.5"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" fill="none"></line>
+              </svg>
+              <span>Stravages.clo</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 STRAVAGES. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Shared JavaScript System -->
+  <script src="shared.js"></script>
+  <script>
+    function handleSubscribe(e) {
+      e.preventDefault();
+      const email = document.getElementById('subscriber-email').value;
+      if (email) {
+        document.getElementById('news-form').style.display = 'none';
+        document.getElementById('news-success').style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>

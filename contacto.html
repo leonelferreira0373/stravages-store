@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACTO | STRAVAGES</title>
+  <meta name="description" content="Entra em contacto com o suporte ao cliente da Stravages. Apoio e esclarecimento de dúvidas.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    Envio grátis em compras acima de 80€
+  </div>
+
+  <!-- Header -->
+  <header id="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="brand/bee.png" alt="Stravages Logo" style="height: 32px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
+        <span>STRAVAGES</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="tracksuits.html">Tracksuits</a></li>
+          <li><a href="colecao-bee.html">Coleção Bee</a></li>
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-icons">
+        <button class="nav-icon-btn" id="search-btn" title="Pesquisar">
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <button class="nav-icon-btn" id="profile-btn" title="Perfil">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+        <button class="nav-icon-btn" id="cart-btn" title="Carrinho">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count-badge" id="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Us Section -->
+  <section style="padding: 140px 0 100px 0;">
+    <div class="container">
+      <div class="contacto-grid">
+        <!-- Contact Info column -->
+        <div class="contacto-info-col">
+          <div>
+            <span class="section-label">Suporte e Parcerias</span>
+            <h1 class="info-title" style="margin-top: 10px;">Contactos</h1>
+          </div>
+          
+          <div>
+            <h4 class="contacto-item-title">E-mail de Suporte</h4>
+            <p class="contacto-item-text">support@stravages.com</p>
+          </div>
+
+          <div>
+            <h4 class="contacto-item-title">Showroom e Atelier</h4>
+            <p class="contacto-item-text">
+              Rua da Boavista, Nº 1450<br>
+              4050-101 Porto, Portugal
+            </p>
+          </div>
+
+          <div>
+            <h4 class="contacto-item-title">Horário de Atendimento</h4>
+            <p class="contacto-item-text">
+              Segunda a Sexta-feira: 09h00 - 18h00<br>
+              Sábado: 10h00 - 14h00
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Form column -->
+        <div style="background-color: var(--bg-secondary); padding: 40px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.03);">
+          <h3 class="modal-title" style="font-size: 1.1rem; margin-bottom: 25px;">Enviar Mensagem</h3>
+          
+          <div class="form-success-alert" id="contact-success">
+            Mensagem enviada com sucesso! Um administrador da colmeia responderá dentro de 24 horas úteis.
+          </div>
+
+          <form id="contact-form" onsubmit="submitContactForm(event)">
+            <div class="form-group">
+              <label for="contact-name">Nome Completo</label>
+              <input type="text" id="contact-name" required placeholder="O teu nome">
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Endereço de E-mail</label>
+              <input type="email" id="contact-email" required placeholder="nome@exemplo.com">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Mensagem / Dúvida</label>
+              <textarea id="contact-message" required rows="5" placeholder="Como te podemos ajudar?"></textarea>
+            </div>
+            <button type="submit" class="btn-submit-gold" style="width: 100%; margin-top: 10px;">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="brand/bee.png" alt="Stravages Logo" style="height: 24px; width: auto; object-fit: contain;">
+          <span>STRAVAGES</span>
+        </a>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Shop</h4>
+        <ul class="footer-links">
+          <li><a href="shop.html?category=beanies">Beanies</a></li>
+          <li><a href="tracksuits.html">Tracksuits</a></li>
+          <li><a href="shop.html?category=accessories">Acessórios</a></li>
+          <li><a href="shop.html">Todos os produtos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Informações</h4>
+        <ul class="footer-links">
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="envios-entregas.html">Envios e Entregas</a></li>
+          <li><a href="trocas-devolucoes.html">Trocas e Devoluções</a></li>
+          <li><a href="perguntas-frequentes.html">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Ajuda</h4>
+        <ul class="footer-links">
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+          <li><a href="termos-condicoes.html">Termos & Condições</a></li>
+          <li>
+            <a href="https://instagram.com" target="_blank" class="footer-social-link">
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" fill="none" stroke-width="1.5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" fill="none" stroke-width="1.5"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" fill="none"></line>
+              </svg>
+              <span>Stravages.clo</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 STRAVAGES. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Shared Global Scripts -->
+  <script src="shared.js"></script>
+  <script>
+    function submitContactForm(e) {
+      e.preventDefault();
+      document.getElementById('contact-form').style.display = 'none';
+      document.getElementById('contact-success').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOP | STRAVAGES</title>
+  <meta name="description" content="Coleção completa Stravages - Streetwear de luxo, beanies, tracksuits e acessórios exclusivos.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    Envio grátis em compras acima de 80€
+  </div>
+
+  <!-- Header -->
+  <header id="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="brand/bee.png" alt="Stravages Logo" style="height: 32px; width: auto; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));">
+        <span>STRAVAGES</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="tracksuits.html">Tracksuits</a></li>
+          <li><a href="colecao-bee.html">Coleção Bee</a></li>
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-icons">
+        <button class="nav-icon-btn" id="search-btn" title="Pesquisar">
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <button class="nav-icon-btn" id="profile-btn" title="Perfil">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+        <button class="nav-icon-btn" id="cart-btn" title="Carrinho">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count-badge" id="cart-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Collection Catalog Section -->
+  <section class="products-section" style="padding: 140px 0 100px 0;">
+    <div class="container">
+      <div class="products-header" style="text-align: center;">
+        <span class="section-label">Streetwear de Luxo</span>
+        <h2 class="section-title">Coleção Completa</h2>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="shop-filters">
+        <div class="btn-filter-tab active" data-category="all">Todos</div>
+        <div class="btn-filter-tab" data-category="beanies">Beanies</div>
+        <div class="btn-filter-tab" data-category="tracksuits">Tracksuits</div>
+        <div class="btn-filter-tab" data-category="accessories">Acessórios</div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="shop-grid">
+        <!-- Beanie Black -->
+        <div class="product-card" data-id="beanie-black" data-name="Stravages Beanie Black" data-price="29.90" data-cat="beanies">
+          <img class="product-card-img" src="products/beanie-black-1.jpg" alt="Stravages Beanie Black">
+          <div class="product-info">
+            <h3 class="product-name">Stravages Beanie Black</h3>
+            <p class="product-price">29,90€</p>
+            <button class="btn-add-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Beanie White -->
+        <div class="product-card" data-id="beanie-white" data-name="Stravages Beanie White" data-price="29.90" data-cat="beanies">
+          <img class="product-card-img" src="products/beanie-white-1.jpg" alt="Stravages Beanie White">
+          <div class="product-info">
+            <h3 class="product-name">Stravages Beanie White</h3>
+            <p class="product-price">29,90€</p>
+            <button class="btn-add-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Beanie Pink -->
+        <div class="product-card" data-id="beanie-pink" data-name="Stravages Beanie Pink" data-price="29.90" data-cat="beanies">
+          <img class="product-card-img" src="products/beanie-pink-1.jpg" alt="Stravages Beanie Pink">
+          <div class="product-info">
+            <h3 class="product-name">Stravages Beanie Pink</h3>
+            <p class="product-price">29,90€</p>
+            <button class="btn-add-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Beanie Yellow -->
+        <div class="product-card" data-id="beanie-yellow" data-name="Stravages Beanie Yellow" data-price="29.90" data-cat="beanies">
+          <img class="product-card-img" src="products/beanie-yellow-1.jpg" alt="Stravages Beanie Yellow">
+          <div class="product-info">
+            <h3 class="product-name">Stravages Beanie Yellow</h3>
+            <p class="product-price">29,90€</p>
+            <button class="btn-add-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Balaclava Premium -->
+        <div class="product-card" data-id="balaclava-premium" data-name="Stravages Balaclava Premium" data-price="34.90" data-cat="accessories">
+          <img class="product-card-img" src="products/balaclava-1.jpg" alt="Stravages Balaclava Premium">
+          <div class="product-info">
+            <h3 class="product-name">Stravages Balaclava Premium</h3>
+            <p class="product-price">34,90€</p>
+            <button class="btn-add-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Tracksuit Set -->
+        <div class="product-card" data-id="stravages-set" data-name="Stravages Tracksuit Set" data-price="129.90" data-cat="tracksuits">
+          <img class="product-card-img" src="products/tracksuit-yellow-1.jpg" alt="Stravages Tracksuit Set">
+          <div class="product-info">
+            <h3 class="product-name">Stravages Tracksuit Set</h3>
+            <p class="product-price">129,90€</p>
+            <button class="btn-add-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+
+        <!-- Wallet Premium -->
+        <div class="product-card" data-id="stravages-wallet" data-name="Stravages Wallet Premium" data-price="19.90" data-cat="accessories">
+          <img class="product-card-img" src="products/wallet-1.png" alt="Stravages Wallet Premium">
+          <div class="product-info">
+            <h3 class="product-name">Stravages Wallet Premium</h3>
+            <p class="product-price">19,90€</p>
+            <button class="btn-add-cart">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="brand/bee.png" alt="Stravages Logo" style="height: 24px; width: auto; object-fit: contain;">
+          <span>STRAVAGES</span>
+        </a>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Shop</h4>
+        <ul class="footer-links">
+          <li><a href="shop.html?category=beanies">Beanies</a></li>
+          <li><a href="tracksuits.html">Tracksuits</a></li>
+          <li><a href="shop.html?category=accessories">Acessórios</a></li>
+          <li><a href="shop.html">Todos os produtos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Informações</h4>
+        <ul class="footer-links">
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="envios-entregas.html">Envios e Entregas</a></li>
+          <li><a href="trocas-devolucoes.html">Trocas e Devoluções</a></li>
+          <li><a href="perguntas-frequentes.html">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-col-title">Ajuda</h4>
+        <ul class="footer-links">
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="politica-privacidade.html">Política de Privacidade</a></li>
+          <li><a href="termos-condicoes.html">Termos & Condições</a></li>
+          <li>
+            <a href="https://instagram.com" target="_blank" class="footer-social-link">
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" fill="none" stroke-width="1.5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" fill="none" stroke-width="1.5"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" fill="none"></line>
+              </svg>
+              <span>Stravages.clo</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 STRAVAGES. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Shared Global Scripts -->
+  <script src="shared.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.btn-filter-tab');
+      const cards = document.querySelectorAll('.product-card');
+
+      // Filtering Category Logic
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          const cat = tab.getAttribute('data-category');
+
+          cards.forEach(card => {
+            const cardCat = card.getAttribute('data-cat');
+            if (cat === 'all' || cardCat === cat) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Parse query params to handle filter links or scroll to specific item
+      const params = new URLSearchParams(window.location.search);
+      const categoryParam = params.get('category');
+      const productParam = params.get('product');
+
+      if (categoryParam) {
+        const matchingTab = document.querySelector(`.btn-filter-tab[data-category="${categoryParam}"]`);
+        if (matchingTab) {
+          matchingTab.click();
+        }
+      }
+
+      if (productParam) {
+        setTimeout(() => {
+          const targetCard = document.querySelector(`.product-card[data-id="${productParam}"]`);
+          if (targetCard) {
+            targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            targetCard.style.borderColor = 'var(--gold-primary)';
+            setTimeout(() => targetCard.style.borderColor = '', 2000);
+          }
+        }, 300);
+      }
+    });
+  </script>
+</body>
+</html>
