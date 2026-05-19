@@ -17,3 +17,5 @@ yarn-debug.log*
 # Local env
 .env
 .env.local
+
+.vercel
